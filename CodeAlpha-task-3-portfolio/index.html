@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ============ NAV RAIL ============ -->
+  <nav class="rail">
+    <div class="rail-top">
+      <a href="#hero" class="mark">Varsha<span>Agrahari</span></a>
+      <div class="status"><span class="dot"></span> available for work</div>
+      <button class="rail-toggle" id="railToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+
+    <div class="rail-nav" id="railNav">
+      <a href="#about" class="nav-link" data-section="about"><span class="idx mono">01</span>About</a>
+      <a href="#projects" class="nav-link" data-section="projects"><span class="idx mono">02</span>Projects</a>
+      <a href="#resume" class="nav-link" data-section="resume"><span class="idx mono">03</span>Resume</a>
+      <a href="#contact" class="nav-link" data-section="contact"><span class="idx mono">04</span>Contact</a>
+    </div>
+
+    <div class="rail-bottom">
+      <div>Based in Basti, Uttar Pradesh, India</div>
+      <div class="social-row">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">Github</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:hello@mayachen.dev" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="terminal mono" id="typedLine">&gt; <span id="typedText"></span><span class="cursor"></span></div>
+      <h2>I create clean, responsive, and user-friendly web experiences that bring ideas to life.</h2>
+      <p class="role">Frontend Development - Learning Backend - Aspiring Full Stack developer<strong></strong> Crafting responsive interfaces, exploring backend development, and turning ideas into web experiences.</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects →</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="stat"><div class="num">Fresher</div><div class="label">Frontend development</div></div>
+        <div class="stat"><div class="num">6+</div><div class="label">projects builds</div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-tag">01 / About</div>
+      <h2 class="reveal" style="font-size: clamp(1.8rem, 3.2vw, 2.6rem);">Background</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm <strong>Varsha Agrahari</strong>, a frontend developer based in Basti. Currently I a'm doing internship at codeAlpha, where I'm gaining practical experience by building responsive and user freindly web projects.</p>
+          <p>I have a strong foundation in HTML, CSS, and JavaScript, and I enjoy turning ideas and design into clean and interactive web experiences. Alongside Frontend Development, I'm currently learning Backend Development to expand my technical knowledge and gradually work towards becoming a Full Stack Developer. </p>
+          <p>I'm passionate about learning through hands-on projects, improving my coding skills, and creating meaningful digital experiences.</p>
+
+          <div class="skill-block">
+            <h3>Core stack</h3>
+            <div class="skill-grid">
+              <div class="skill-chip">JavaScript / Node.js <span class="lvl">●●●●●</span></div>
+              <div class="skill-chip">Python <span class="lvl">●●●●●</span></div>
+              <div class="skill-chip">C / C++ <span class="lvl">●●●●○</span></div>
+              <div class="skill-chip">MySQL / MongoDB <span class="lvl">●●●●●</span></div>
+              <div class="skill-chip">Express.js <span class="lvl">●●●●○</span></div>
+              <div class="skill-chip">Git<span class="lvl">●●●○○</span></div>
+              <div class="skill-chip">GitHub<span class="lvl">●●●●○</span></div>
+              <div class="skill-chip">VS Code<span class="lvl">●●●●○</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-panel reveal">
+          <div class="row"><span class="k">Location</span><span class="v">Basti, Uttar Pradesh, India</span></div>
+          <div class="row"><span class="k">Focus</span><span class="v">Frontend Development / Backend Learning</span></div>
+          <div class="row"><span class="k">Experience</span><span class="v">Fresher</span></div>
+          <div class="row"><span class="k">Current role</span><span class="v">Frontend Development Intern, CodeAlpha</span></div>
+          <div class="row"><span class="k">Open to</span><span class="v">Internship / Entry-level Oppurtunities</span></div>
+          <div class="row"><span class="k">Timezone</span><span class="v">IST (UTC+5:30)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-tag">02 / My Projects</div>
+      <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.6rem);">Projects</h2>
+
+      <div class="project-list">
+
+        <div class="project-card reveal">
+          <div>
+            <div class="project-head">
+              <span class="project-id mono">PRJ-01</span>
+              <h3>Calculator</h3>
+            </div>
+            <p>A responsive calculator built with HTML, CSS, JavaScript, featuring basic arithmetic operations, delete and clear functionality, and keyboard support.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+            <a href="#" target="_blank" rel="noopener">Case study →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div>
+            <div class="project-head">
+              <span class="project-id mono">PRJ-02</span>
+              <h3>Image Gallary</h3>
+            </div>
+            <p>A interactive image gallary built with HTML, CSS, and JavaScript, featuring category-based image browsing, hover effects and a lightbox preview.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div>
+            <div class="project-head">
+              <span class="project-id mono">PRJ-03</span>
+              <h3>Personal Portfolio</h3>
+            </div>
+            <p>A responsive personal portfolio website showcasing my frontend development projects, skills, learning journey and contact information.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+            <a href="#" target="_blank" rel="noopener">Case study →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div>
+            <div class="project-head">
+              <span class="project-id mono">PRJ-04</span>
+              <h3>PaisaBook</h3>
+            </div>
+            <p>A personal finance tracker designed to help users record and organize their income and expenses through a simple and user friendly interface.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </div>
+
+         <div class="project-card reveal">
+          <div>
+            <div class="project-head">
+              <span class="project-id mono">PRJ-04</span>
+              <h3>College AI Chatbot </h3>
+            </div>
+            <p>A frontend based AI chatbot interface designed for college-related assistance, providing students with a simple way to interact with an AI-powered help system.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <div class="section-tag">03 / Experience</div>
+      <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.6rem);">Resume</h2>
+
+      <div class="resume-timeline">
+        <div class="resume-entry reveal">
+          <div class="period mono">2026 — Present</div>
+          <div>
+            <h3>Frontend Development Intern</h3>
+            <div class="org">CodeAlpha</div>
+            <p>Working on frontend development projects using HTML, CSS, and JavaScript, While improving responsive design, UI development and JavaScript skills</p>
+          </div>
+        </div>
+
+        <div class="resume-entry reveal">
+          <div class="period mono">2026</div>
+          <div>
+            <h3>Backend Development - Learning</h3>
+            <div class="org">Apna College</div>
+            <p>Currently learning backend development with Node.js, Express.js, EJS and working with databases to build a foundation for full-stack development</p>
+          </div>
+        </div>
+
+      <div class="resume-entry reveal">
+         <div class="period mono">2024 - 2027</div>
+          <div>
+            <h3>Bachelor of Computer Application (BCA)</h3>
+            <div class="org">Siddhartha University</div>
+            <p>Currently i'm in 3rd year and developing strong skills in web development and programming. Alongside frontend
+              development, I'm exploring backend technologies to expand my technical knowledge and work towards becoming a well rounded developer.
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="section-tag">04 / Contact</div>
+
+      <div class="contact-grid">
+        <div class="contact-intro reveal">
+          <h2>Let's build something great.</h2>
+          <p>I'm BCA student and aspiring Full Stack Developer, currently focused on Frontend Development and learning Backend Development. I'm open to internship opportunities, collaborations, and intersting web development projects.</p>
+
+          <div class="contact-channels">
+            <a href="agraharivarsha210@gmail.com" class="contact-channel"><span>Gmail</span><span>agraharivarsha210@gmail.com</span></a>
+            <a href="github.com" target="_blank" rel="noopener" class="contact-channel"><span>github.com</span><span>Varsha Agrahari</span></a>
+            <a href="linkedin.com" target="_blank" rel="noopener" class="contact-channel"><span>linkedin.com</span><span>Varsha Agrahari</span></a>
+          </div>
+        </div>
+
+        <form class="reveal" id="contactForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project?" required></textarea>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn btn-primary">Send message →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy; 2026 Varsha Agrahari. Designed & developed with passion.</div>
+      <div>Basti, Uttar Pradesh, India</div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

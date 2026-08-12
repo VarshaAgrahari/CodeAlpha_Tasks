@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="gallary-intro">
+        <h1>Image Gallery</h1>
+        <p>Explore a curated collection of beautiful moments.Captured through
+        nature, wildlife, stuuning cars, and remarkeble places around the world.<br>
+        Click any image to view it in detail and discover its story.
+        </p>
+    </section>
+    <hr class="gallary-divider">
+
+    <!-- Category Filters -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="cars">Cars</button>
+        <button class="filter-btn" data-filter="countries">Countries</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/img11.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/img12.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="nature">
+            <img src="images/img13.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="nature">
+            <img src="images/img14.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="nature">
+            <img src="images/img15.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/img5.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/img7.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="animals">
+            <img src="images/img18.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="animals">
+            <img src="images/img19.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="cars">
+            <img src="images/img6.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="cars">
+            <img src="images/img8.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="cars">
+            <img src="images/img9.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="cars">
+            <img src="images/img17.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="countries">
+            <img src="images/img1.jpg">
+        </div>
+
+        <div class="gallery-item" data-category="countries">
+            <img src="images/img2.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="countries">
+            <img src="images/img3.jpg">
+        </div>
+
+         <div class="gallery-item" data-category="countries">
+            <img src="images/img4.jpg">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn">&times;</button>
+
+        <button class="prev-btn" id="prevBtn">&#10094;</button>
+
+        <img id="lightboxImage" src="" alt="Preview">
+
+        <button class="next-btn" id="nextBtn">&#10095;</button>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <p>&copy;2026 Image Gallary</p>
+
+        <p>
+            A visual Collection of nature, animals, cars and places.
+        </p>
+
+        <span>Designed & Developed with HTML - CSS - JavaScript</span>
+    </footer>
+</body>
+</html>
